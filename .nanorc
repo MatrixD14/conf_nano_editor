@@ -1,18 +1,18 @@
-set linenumbers
-set softwrap
-set minibar
-#set nonewlines
-#set nohelp
-set mouse
-set statuscolor brightwhite,white
-set titlecolor brightred
-set functioncolor brightwhite
-#set indicator
-set keycolor orange
-set locking
-set smarthome
-set showcursor
-set autoindent
+set linenumbers #adiciona numeros na lateral
+set softwrap #quebra de linha quando chega na borda do editor nano
+set minibar #move a barra onde mostra o nome do arquivo 
+#set nonewlines #não deixa sobra de linha no final do texto
+#set nohelp #remove dicas de atalho
+set mouse  #cursor fica livre,no editor de texto
+set statuscolor brightwhite  #muda a cor do texto e do fundo das menssagem de erro
+set titlecolor brightred #muda a cor do texto e do fundo da barra que mostra o nome do arquico
+set functioncolor brightwhite #muda a cor do texto e do fundo onde mostra o que modifica o atalho
+#set indicator #mostra a barra-lateral do editor
+set keycolor orange #muda a cor do texto e do fundo do atalho ex.: ^K ou ^u ^x
+set locking #modo seguro para escrita em arquivo
+set smarthome #melhora comportamento da tecla home
+set showcursor #mostra o cursor no navegador de ajuda
+set autoindent #replica o espaço que o anterios tinha
 
 #__html__#
 syntax "html" "\.(html|htm)$"
