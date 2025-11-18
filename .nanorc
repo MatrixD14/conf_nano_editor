@@ -1,0 +1,76 @@
+set linenumbers
+set softwrap
+set minibar
+#set nonewlines
+#set nohelp
+set mouse
+set statuscolor brightwhite,white
+set titlecolor brightred
+set functioncolor brightwhite
+#set indicator
+set keycolor orange
+set locking
+set smarthome
+set showcursor
+set autoindent
+
+#__html__#
+syntax "html" "\.(html|htm)$"
+color lightblue "<\/?[A-Za-z0-9:-]+\b[^>]*>"
+color orange "(class|id|href|src|alt|title|style|type|rel)[ ]*="
+#css
+color brightcyan "\<(color|background|margin|padding|font|display|position|border|width|height)\>"
+color purple "[#\.][A-Za-z0-9_-]+"
+#js
+color brightblue "\<(var|let|const|function|return|if|else|for|while|extends|new|try|catch|async|await)\>"
+color brightblue "class[[:space:]][A-Za-z0-9_]"
+#comentario
+color yellow "\"[^\"]*\""
+color gray "//.*$"
+color gray "/\*([^*]|\*+[^*/])*\*+/"
+color green "<!--.*?-->"
+
+#__php__#
+syntax "php" "\.php$"
+color brightblue "<\?php|\?>"
+color brightgreen "\$(\w+)"
+color brightblue "\<class[[:space:]]"
+color brightblue "\<(echo|function|return|public|private|protected|new|if|else|foreach|while|extends|implements)\>"
+#html
+color lightblue "<\/?[A-Za-z0-9:-]+\b[^>]*>"
+color orange "(class|id|href|src|alt|title|style|type|rel)[ ]*="
+#css
+color brightcyan "\<(color|background|margin|padding|font|display|position|border|width|height)\>"
+color purple "[#\.][A-Za-z0-9_-]+"
+#js
+color brightblue "\<(var|let|const|function|return|if|else|for|while|extends|new|try|catch|async|await)\>"
+color brightblue "class[[:space:]][A-Za-z0-9_]"
+#comentario
+color white "\"[^\"]*\""
+color gray "//.*$"
+color gray "/\*([^*]|\*+[^*/])*\*+/"
+color green "<!--.*?-->"
+
+#__json__#
+syntax "json" "\.json$"
+color brightwhite "\"[^\"]*\"(?=\s*:)"
+color white "\"[^\"]*\""
+color brightblack "^[ \t]*//.*$"
+
+#__css__#
+syntax "css" "\.css$"
+color brightblue "\<(color|background|margin|padding|font|display|position|border|width|height)\>"
+color brightgreen "[#\.][A-Za-z0-9_-]+"
+color brightblack "/\*([^*]|\*+[^*/])*\*+/"
+
+#__javascript__#
+syntax "javascript" "\.js$"
+color brightblue "\<(var|let|const|function|return|if|else|for|while|class|extends|new|try|catch|async|await)\>"
+color gray "//.*$"
+color gray "/\*([^*]|\*+[^*/])*\*+/"
+
+#__java__#
+syntax "java" "\.java$"
+color lightblue "\<(class|public|private|protected|static|void|new|return|if|else|for|while|try|catch)\>"
+color gray "//.*$"
+color gray "/\*([^*]|\*+[^*/])*\*+/"
